@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="planets.gif" width="145" height="126" usemap="#planetmap">
+
+<map name="planetmap">
+<area id="index" shape="circle" coords="124,58,8" alt="index" href="index.htm">
+</map>
+
+<p>Click the button to display the protocol of the href attribute for the "venus" area.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("index").protocol;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
